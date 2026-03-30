@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TilePro | Professional Tile Installation in Miami</title>
+    
+    <!-- Fonts and Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="#hero" class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-border-all"></i></span>
+                Tile<span>Pro</span>
+            </a>
+            
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#before-after">Result</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <a href="#contact" class="btn btn-outline desktop-only">Request a Quote</a>
+
+            <div class="hamburger" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div class="mobile-menu" id="mobile-menu">
+            <ul class="mobile-nav-list">
+                <li><a href="#hero" class="mobile-link">Home</a></li>
+                <li><a href="#services" class="mobile-link">Services</a></li>
+                <li><a href="#before-after" class="mobile-link">Result</a></li>
+                <li><a href="#portfolio" class="mobile-link">Portfolio</a></li>
+                <li><a href="#reviews" class="mobile-link">Reviews</a></li>
+                <li><a href="#contact" class="mobile-link">Contact</a></li>
+                <li><a href="#contact" class="btn btn-primary mt-2">Request a Quote</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-bg">
+                <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=2069&auto=format&fit=crop" alt="Premium bathroom tiles Miami">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="container hero-content animate-on-scroll">
+                <span class="badge">Premium Remodeling</span>
+                <h1>Professional Tile Installation<br> with Flawless Results</h1>
+                <p>Modern approach, meticulous attention to detail, and quality visible at first glance. We bring the most demanding design projects to life in Miami.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Request a Quote</a>
+                    <a href="#portfolio" class="btn btn-secondary">View Our Work</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Before / After Section -->
+        <section class="before-after-sec" id="before-after">
+            <div class="container animate-on-scroll">
+                <div class="section-head center">
+                    <h2 class="title">A Result You Can Instantly See</h2>
+                    <p class="subtitle">Experience the difference between a bare concrete site and a completed luxury finish. Drag the slider to compare.</p>
+                </div>
+
+                <div class="slider-wrapper">
+                    <!-- Before/After Slider Component -->
+                    <div class="ba-slider" id="ba-slider">
+                        <!-- After (Base image) -->
+                        <div class="img-container img-after">
+                            <img src="after.jpg" alt="Finished luxury bathroom tile" draggable="false">
+                            <div class="label label-after">After</div>
+                        </div>
+
+                        <!-- Before (Clipped image via JS CSS var) -->
+                        <div class="img-container img-before">
+                            <img src="before.jpg" alt="Unfinished bathroom space before tiling" draggable="false">
+                            <div class="label label-before">Before</div>
+                        </div>
+
+                        <!-- Slider Handle -->
+                        <div class="slider-handle">
+                            <div class="slider-handle-circle">
+                                <i class="fa-solid fa-arrows-left-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services" id="services">
+            <div class="container">
+                <div class="section-head animate-on-scroll">
+                    <span class="accent-text">What We Do</span>
+                    <h2 class="title">Our Services</h2>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card animate-on-scroll">
+                        <div class="service-icon"><i class="fa-solid fa-layer-group"></i></div>
+                        <h3>Tile Installation</h3>
+                        <p>Working with porcelain, large-format tile, and luxury mosaic. Perfectly leveled planes and impeccable seams.</p>
+                    </div>
+                    <div class="service-card animate-on-scroll" style="transition-delay: 0.1s;">
+                        <div class="service-icon"><i class="fa-solid fa-bath"></i></div>
+                        <h3>Bathroom Remodel</h3>
+                        <p>A comprehensive approach: from high-grade waterproofing and plumbing prep to the installation of high-end fixtures.</p>
+                    </div>
+                    <div class="service-card animate-on-scroll" style="transition-delay: 0.2s;">
+                        <div class="service-icon"><i class="fa-solid fa-utensils"></i></div>
+                        <h3>Kitchen Backsplashes</h3>
+                        <p>Precise geometry, accurate 45° miter cuts, and spotless work around delicate cabinets and outlets.</p>
+                    </div>
+                    <div class="service-card animate-on-scroll" style="transition-delay: 0.3s;">
+                        <div class="service-icon"><i class="fa-solid fa-cubes"></i></div>
+                        <h3>Flooring Solutions</h3>
+                        <p>Professional floor tile laying for any room shape. Complete preparation and radiant heating installation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advantages Section -->
+        <section class="advantages" id="advantages">
+            <div class="container">
+                <div class="adv-grid animate-on-scroll">
+                    <div class="adv-item">
+                        <span class="adv-num">10+</span>
+                        <h4>Years of Experience</h4>
+                        <p>Hundreds of completed high-end projects across South Florida.</p>
+                    </div>
+                    <div class="adv-item">
+                        <span class="adv-num"><i class="fa-solid fa-shield-halved"></i></span>
+                        <h4>Reliable Warranty</h4>
+                        <p>We provide an extensive guarantee covering all our craftsmanship.</p>
+                    </div>
+                    <div class="adv-item">
+                        <span class="adv-num"><i class="fa-regular fa-clock"></i></span>
+                        <h4>Strict Deadlines</h4>
+                        <p>Operating flawlessly according to your strictly agreed timeline.</p>
+                    </div>
+                    <div class="adv-item">
+                        <span class="adv-num"><i class="fa-solid fa-gem"></i></span>
+                        <h4>Premium Quality</h4>
+                        <p>Surgical precision with the finest commercial tools in the industry.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio" id="portfolio">
+            <div class="container">
+                <div class="section-head center animate-on-scroll">
+                    <span class="accent-text">Our Portfolio</span>
+                    <h2 class="title">Completed Projects</h2>
+                </div>
+                
+                <div class="portfolio-grid">
+                    <!-- Images referenced here to your custom filenames -->
+                    <div class="portfolio-item animate-on-scroll">
+                        <img src="project1.jpg" alt="Modern Bathroom Remodel">
+                        <div class="portfolio-info">
+                            <h4>Modern Master Bathroom</h4>
+                            <p>Large-format porcelain & marble finish</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item animate-on-scroll" style="transition-delay: 0.1s;">
+                        <img src="project2.jpg" alt="Kitchen Layout">
+                        <div class="portfolio-info">
+                            <h4>Bright Kitchen Overhaul</h4>
+                            <p>Premium tile backsplash and floor styling</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item animate-on-scroll" style="transition-delay: 0.2s;">
+                        <img src="project3.jpg" alt="Elegant Walk-In Shower">
+                        <div class="portfolio-info">
+                            <h4>Luxury Shower Setup</h4>
+                            <p>Perfect 45-degree corner details & gold trims</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item animate-on-scroll" style="transition-delay: 0.3s;">
+                        <img src="project4.jpg" alt="Golden Spa Retreat">
+                        <div class="portfolio-info">
+                            <h4>Spa Oasis Aesthetic</h4>
+                            <p>Custom floral mosaic installation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How we work Section -->
+        <section class="process" id="process">
+            <div class="container animate-on-scroll">
+                <div class="section-head center">
+                    <h2 class="title">How We Work</h2>
+                    <p class="subtitle">A clear and transparent sequence dedicated to bringing you the perfect final look.</p>
+                </div>
+                
+                <div class="timeline">
+                    <div class="time-step">
+                        <div class="step-circle">1</div>
+                        <div class="step-text">
+                            <h5>Contact Us</h5>
+                            <p>Leave your information and request on our site.</p>
+                        </div>
+                    </div>
+                    <div class="time-step">
+                        <div class="step-circle">2</div>
+                        <div class="step-text">
+                            <h5>Estimate</h5>
+                            <p>Our expert visits the site to perform precise measurements.</p>
+                        </div>
+                    </div>
+                    <div class="time-step">
+                        <div class="step-circle">3</div>
+                        <div class="step-text">
+                            <h5>Agreement</h5>
+                            <p>We lock in your costs, timeframe, and finalize material selection.</p>
+                        </div>
+                    </div>
+                    <div class="time-step">
+                        <div class="step-circle">4</div>
+                        <div class="step-text">
+                            <h5>Execution</h5>
+                            <p>Neat, fast progress in strict accordance with safety protocols.</p>
+                        </div>
+                    </div>
+                    <div class="time-step">
+                        <div class="step-circle">5</div>
+                        <div class="step-text">
+                            <h5>Delivery</h5>
+                            <p>Handing over an immaculate space with impeccable quality.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="reviews" id="reviews">
+            <div class="container animate-on-scroll">
+                <div class="section-head center">
+                    <span class="accent-text">Client Satisfaction</span>
+                    <h2 class="title">Testimonials</h2>
+                </div>
+                
+                <div class="review-grid">
+                    <div class="review-card">
+                        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                        <p class="rev-text">"TilePro remodeled our bathroom and their attention to detail blew my mind. They executed 45-degree cuts perfectly—absolutely zero chips on the marble edges. Incredible craftsmanship and very polite installers."</p>
+                        <div class="rev-author">
+                            <div class="rev-avatar">MK</div>
+                            <div>
+                                <h5>Michael K.</h5>
+                                <span>Brickell, Miami</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                        <p class="rev-text">"I ordered an elaborate herringbone layout with exceptionally delicate luxury tile for our kitchen backsplash. This team managed everything so cleanly, hitting exact deadlines with fantastic communication throughout!"</p>
+                        <div class="rev-author">
+                            <div class="rev-avatar">OL</div>
+                            <div>
+                                <h5>Olivia L.</h5>
+                                <span>Coral Gables, Miami</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container animate-on-scroll">
+                <div class="contact-box">
+                    <div class="contact-info">
+                        <h2>Start your renovation with the right team</h2>
+                        <p>Complete this brief form. We will call you directly to discuss details and give you an initial quote at zero cost.</p>
+                        
+                        <div class="contact-list">
+                            <div class="c-item">
+                                <i class="fa-solid fa-phone"></i>
+                                <span>+1 (305) 123-4567</span>
+                            </div>
+                            <div class="c-item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>hello@tilepromiami.com</span>
+                            </div>
+                            <div class="c-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Miami, Florida, USA</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-wrap">
+                        <form id="contactForm" class="form" autocomplete="off">
+                            <div class="input-group">
+                                <input type="text" id="name" placeholder=" " required>
+                                <label for="name">Your Name</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="tel" id="phone" placeholder=" " required>
+                                <label for="phone">Phone Number</label>
+                            </div>
+                            <div class="input-group">
+                                <textarea id="message" rows="3" placeholder=" " required></textarea>
+                                <label for="message">How can we help? (Describe project scope)</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Get a Free Consultation</button>
+                            <div id="form-message" class="form-success-message">Thanks! We’ll be in touch as soon as possible.</div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col brand-col">
+                <a href="#hero" class="logo">
+                    <span class="logo-icon"><i class="fa-solid fa-border-all"></i></span>
+                    Tile<span>Pro</span>
+                </a>
+                <p>Setting the ultimate standard for master-level tile installation across the South Florida region.</p>
+                <div class="socials">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Our Portfolio</a></li>
+                    <li><a href="#reviews">Testimonials</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Capabilities</h4>
+                <ul>
+                    <li>Large Format Slab Tiling</li>
+                    <li>Premium Stone Remodels</li>
+                    <li>Detailed Epoxies</li>
+                    <li>Custom Bathroom Spa</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contacts</h4>
+                <ul class="contacts-footer">
+                    <li><i class="fa-solid fa-phone"></i> +1 (305) 123-4567</li>
+                    <li><i class="fa-solid fa-envelope"></i> hello@tilepro.com</li>
+                    <li><i class="fa-solid fa-location-dot"></i> Miami, FL</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2026 TilePro Miami. All Rights Reserved. Designed to impress.</p>
+        </div>
+    </footer>
+
+    <!-- JS Files link -->
+    <script src="script.js"></script>
+</body>
+</html>
